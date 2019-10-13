@@ -1,0 +1,16 @@
+ $colors: (
+     --one: rgb(6, 179, 219),
+     --two: rgb(78, 212, 134),
+     --three: rgb(97, 57, 246),
+     --four: rgb(227, 182, 61),
+     --five: rgb(220, 61, 102),
+     --six: rgb(189, 84, 205));
+
+ .box-color {
+     @each $name,
+     $color in $colors {
+         &#{$name} {
+             background-color: $color;
+         }
+     }
+ }

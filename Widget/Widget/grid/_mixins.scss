@@ -1,0 +1,26 @@
+@mixin width-height ($width, $height) {
+    width: $width;
+    height: $height
+}
+
+@mixin background-size($property) {
+    -webkit-background-size: $property;
+    -moz-background-size: $property;
+    -o-background-size: $property;
+    background-size: $property;
+}
+
+@mixin margin-left-right ($left, $right) {
+    margin-left: $left;
+    margin-right: $right;
+}
+
+@mixin grid-template-rows-columns ($rows, $columns) {
+    grid-template-rows: $rows;
+    grid-template-columns: $columns
+}
+
+@mixin ms-grid-column-row ($column, $row) {
+    -ms-grid-column: $column;
+    -ms-grid-row: $row;
+}
