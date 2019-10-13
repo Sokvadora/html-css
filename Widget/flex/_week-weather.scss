@@ -1,0 +1,36 @@
+@import 'mixins';
+
+.week-weather__items {
+    @extend %flex-space;
+   
+}
+
+.week-weather__image {
+    @include width-height((23px), (23px));
+
+}
+
+.week-weather__text {
+    @extend %font-settings;
+    font-size: 13px;
+    margin-top: 5px;
+
+}
+
+.week-weather__icon {
+    @include width-height((73px), (74px));
+    margin-top: 17px;
+}
+
+.week-weather__description {
+    @include width-height((144px), (90px));
+    @include padding-left-right ((30px), (30px));
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.212);
+    padding-bottom: 10px;
+}
+
+.week-weather {
+    @include width-height((203px), (205px));
+    text-align: center;
+}

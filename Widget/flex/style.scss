@@ -1,0 +1,88 @@
+@charset 'utf-8';
+
+body {
+    margin: 0;
+}
+
+@import 'mixins';
+@import 'week-weather';
+@import 'city-cards-colors';
+
+
+%flex-space {
+    display: flex;
+    justify-content: space-between;
+}
+
+%font-settings {
+    color: white;
+    display: inline;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.widget-background {
+    @include width-height((100%), (100%));
+    @include background-size(cover);
+    background-image: url(/img/Background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 100px;
+    padding-bottom: 127px;
+    min-height: 70vh;
+}
+
+.cubes {
+    @extend %flex-space;
+    @include width-height((609px), (410px));
+    @include margin-left-right ((auto), (auto));
+    flex-wrap: wrap;
+}
+
+.city-one-weather,
+.city-two-weather,
+.city-three-weather,
+.city-four-weather,
+.city-five-weather {
+
+    @include width-height((203px), (205px));
+    text-align: center;
+}
+
+.city-one-weather__icon,
+.city-two-weather__icon,
+.city-three-weather__icon,
+.city-four-weather__icon,
+.city-five-weather__icon { 
+
+    @include width-height((90px), (90px));
+    @include margin-left-right ((20px), (20px));
+    @include padding-left-right ((20px), (20px));
+    padding-bottom: 10px;
+    margin-top: 39px;
+}
+
+.city-one-weather__text,
+.city-two-weather__text,
+.city-three-weather__text,
+.city-four-weather__text,
+.city-five-weather__text {
+
+    @extend %font-settings;
+    font-size: 18px;
+}
+
+ 
+
+@media(max-width: 767px) {
+    .cubes {
+        @include width-height((406px), (615px));
+    }
+}
+
+@media(max-width: 575px) {
+    .cubes {
+        @include width-height((203px), (1230px));
+    }
+}

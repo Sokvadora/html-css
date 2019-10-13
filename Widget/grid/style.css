@@ -1,0 +1,246 @@
+body {
+  margin: 0px;
+}
+
+.box-color--one {
+  background-color: #06b3db;
+}
+
+.box-color--two {
+  background-color: #4ed486;
+}
+
+.box-color--three {
+  background-color: #6139f6;
+}
+
+.box-color--four {
+  background-color: #e3b63d;
+}
+
+.box-color--five {
+  background-color: #dc3d66;
+}
+
+.box-color--six {
+  background-color: #bd54cd;
+}
+
+.widget-background {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  padding-top: 95px;
+  padding-bottom: 127px;
+  min-height: 70vh;
+  background-image: url(/img/Background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.cubes {
+  margin-left: auto;
+  margin-right: auto;
+  width: 609px;
+  height: 410px;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  display: -ms-grid;
+  -ms-grid-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+}
+
+.city-one-weather,
+.city-two-weather,
+.city-three-weather,
+.city-four-weather,
+.week-weather,
+.city-five-weather {
+  width: 203px;
+  height: 205px;
+  text-align: center;
+}
+
+.city-one-weather {
+  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+}
+
+.city-two-weather {
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+}
+
+.city-three-weather {
+  -ms-grid-column: 3;
+  -ms-grid-row: 1;
+}
+
+.city-four-weather {
+  -ms-grid-column: 1;
+  -ms-grid-row: 2;
+}
+
+.week-weather {
+  -ms-grid-column: 2;
+  -ms-grid-row: 2;
+}
+
+.city-five-weather {
+  -ms-grid-column: 3;
+  -ms-grid-row: 2;
+}
+
+.city-one-weather__icon,
+.city-two-weather__icon,
+.city-three-weather__icon,
+.city-four-weather__icon,
+.city-five-weather__icon {
+  width: 90px;
+  height: 90px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.city-one-weather__icon,
+.city-two-weather__icon,
+.city-three-weather__icon,
+.city-four-weather__icon,
+.city-five-weather__icon {
+  margin-top: 43px;
+}
+
+.week-weather__icon {
+  width: 74px;
+  height: 74px;
+  margin-top: 17px;
+}
+
+.week-weather__description {
+  width: 144px;
+  height: 90px;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.212);
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+}
+
+.week-weather__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.week-weather__image {
+  width: 20px;
+  height: 20px;
+}
+
+.city-one-weather__text,
+.city-two-weather__text,
+.city-three-weather__text,
+.city-four-weather__text,
+.city-five-weather__text,
+.week-weather__text {
+  color: white;
+  display: inline;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.week-weather__text {
+  font-size: 13px;
+  margin-top: 5px;
+  padding-bottom: 7px;
+}
+
+@media (max-width: 767px) {
+  .cubes {
+    width: 406px;
+    height: 615px;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    display: -ms-grid;
+    -ms-grid-rows: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+  }
+  .city-one-weather {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+  }
+  .city-two-weather {
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+  }
+  .city-three-weather {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+  }
+  .city-four-weather {
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
+  }
+  .week-weather {
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+  }
+  .city-five-weather {
+    -ms-grid-column: 2;
+    -ms-grid-row: 3;
+  }
+}
+
+@media (max-width: 575px) {
+  .cubes {
+    width: 203px;
+    height: 1230px;
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6, 1fr);
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    display: -ms-grid;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr;
+  }
+  .city-one-weather {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+  }
+  .city-two-weather {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+  }
+  .city-three-weather {
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+  }
+  .city-four-weather {
+    -ms-grid-column: 1;
+    -ms-grid-row: 4;
+  }
+  .week-weather {
+    -ms-grid-column: 1;
+    -ms-grid-row: 5;
+  }
+  .city-five-weather {
+    -ms-grid-column: 1;
+    -ms-grid-row: 6;
+  }
+}
+/*# sourceMappingURL=style.css.map */
