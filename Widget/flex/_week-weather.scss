@@ -1,20 +1,17 @@
 @import 'mixins';
 
 .week-weather__items {
-    @extend %flex-space;
-   
+    @extend %flex-space; 
 }
 
 .week-weather__image {
     @include width-height((23px), (23px));
-
 }
 
 .week-weather__text {
     @extend %font-settings;
     font-size: 13px;
     margin-top: 5px;
-
 }
 
 .week-weather__icon {
